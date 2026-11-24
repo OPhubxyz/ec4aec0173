@@ -1,0 +1,53 @@
+/* Language: CSS | File: GUI/src/app/globals.css | Runtime: Tailwind CSS 3.4 */
+/* External dependency: none */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  --night-bg: #050507;
+  --night-surface: #0b0c10;
+  --night-elevated: #12141a;
+  --night-border: #1e222d;
+  --night-thumb: #252a37;
+  --night-thumb-hover: #363d50;
+}
+
+html,
+body {
+  background-color: var(--night-bg);
+  color: #e6e8ee;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--night-thumb) var(--night-bg);
+}
+
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--night-bg);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--night-thumb);
+  border-radius: 9999px;
+  border: 2px solid var(--night-bg);
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: var(--night-thumb-hover);
+}
+
+*::-webkit-scrollbar-corner {
+  background: var(--night-bg);
+}
