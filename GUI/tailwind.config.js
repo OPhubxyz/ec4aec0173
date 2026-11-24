@@ -1,8 +1,8 @@
-// Language: JavaScript (CommonJS) | File: GUI/tailwind.config.js | Runtime: Tailwind CSS 3.4
+// Language: JavaScript (ES Modules) | File: GUI/tailwind.config.js | Runtime: Tailwind CSS 3.4 / Node.js >= 20
 // External dependency: none
 
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+const tailwindConfig = {
   darkMode: 'class',
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
@@ -25,3 +25,5 @@ module.exports = {
   },
   plugins: [],
 };
+
+export default tailwindConfig;
