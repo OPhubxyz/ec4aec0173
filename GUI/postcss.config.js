@@ -1,9 +1,11 @@
-// Language: JavaScript (CommonJS) | File: GUI/postcss.config.js | Runtime: PostCSS 8.4
+// Language: JavaScript (ES Modules) | File: GUI/postcss.config.js | Runtime: PostCSS 8.4 / Node.js >= 20
 // External dependency: tailwindcss, autoprefixer
 
-module.exports = {
+const postcssConfig = {
   plugins: {
     tailwindcss: {},
     autoprefixer: {},
   },
 };
+
+export default postcssConfig;
